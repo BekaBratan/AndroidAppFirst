@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">FirstApplicationWithGit</string>
+    <string name="authorization">Authorization</string>
+    <string name="creating_account">Creating account</string>
+    <string name="login">Enter login</string>
+    <string name="email">Enter email</string>
+    <string name="password">Enter password</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_in">Sign in</string>
 </resources>

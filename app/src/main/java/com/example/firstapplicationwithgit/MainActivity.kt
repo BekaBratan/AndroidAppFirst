@@ -2,10 +2,8 @@ package com.example.firstapplicationwithgit
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.InputFilter.LengthFilter
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -26,6 +24,17 @@ class MainActivity : AppCompatActivity() {
 
             if (login == "" || email == "" || pass == "")
                 Toast.makeText(this, "Not all plains are filled", Toast.LENGTH_SHORT).show()
+            else {
+                val user = User(login, email, pass)
+
+                val db = dbHelper(this, null)
+                db.addUser(user)
+
+                Toast.makeText(this, "User $login is registered", Toast.LENGTH_SHORT).show()
+                userLogin.text.clear()
+                userEmail.text.clear()
+                userPass.text.clear()
+            }
         }
     }
 }

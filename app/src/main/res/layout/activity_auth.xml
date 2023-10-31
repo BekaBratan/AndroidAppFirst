@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#75072E"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".AuthActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,7 +15,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="170dp"
         android:fontFamily="@font/inter_bold"
-        android:text="@string/creating_account"
+        android:text="@string/authorization"
         android:textColor="#fdfdfd"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -28,10 +28,10 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/login"
-        android:importantForAutofill="no"
         android:inputType="text"
         android:textColor="#fdfdfd"
-        android:textColorHint="#BCAAA4" />
+        android:textColorHint="#BCAAA4"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/user_email"
@@ -41,10 +41,10 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/email"
-        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:textColor="#fdfdfd"
-        android:textColorHint="#BCAAA4" />
+        android:textColorHint="#BCAAA4"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/user_pass"
@@ -54,10 +54,10 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/password"
-        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:textColor="#fdfdfd"
-        android:textColorHint="#BCAAA4" />
+        android:textColorHint="#BCAAA4"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/button"
@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:backgroundTint="#FFC107"
-        android:text="@string/sign_in"
+        android:text="@string/log_in"
         android:textSize="16sp"
         android:textColor="#75072E"
         android:layout_marginTop="30dp"
