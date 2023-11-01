@@ -21,7 +21,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/user_login"
+        android:id="@+id/user_login_reg"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -34,7 +34,7 @@
         android:textColorHint="#BCAAA4" />
 
     <EditText
-        android:id="@+id/user_email"
+        android:id="@+id/user_email_reg"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -47,7 +47,7 @@
         android:textColorHint="#BCAAA4" />
 
     <EditText
-        android:id="@+id/user_pass"
+        android:id="@+id/user_pass_reg"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -60,15 +60,27 @@
         android:textColorHint="#BCAAA4" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_reg"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:backgroundTint="#FFC107"
         android:text="@string/sign_in"
         android:textSize="16sp"
-        android:textColor="#75072E"
+        android:textColor="#ffffff"
         android:layout_marginTop="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/link_to_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/inter"
+        android:text="Authorize"
+        android:textColor="#fdfdfd"
+        android:textSize="17sp"
         android:textStyle="bold" />
 
 </LinearLayout>

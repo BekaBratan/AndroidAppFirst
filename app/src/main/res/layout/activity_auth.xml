@@ -5,7 +5,7 @@
     android:id="@+id/emailLabel"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#75072E"
+        android:background="#FFC107"
     android:orientation="vertical"
     tools:context=".AuthActivity">
 
@@ -16,59 +16,58 @@
         android:layout_marginTop="170dp"
         android:fontFamily="@font/inter_bold"
         android:text="@string/authorization"
-        android:textColor="#fdfdfd"
+        android:textColor="#ffffff"
         android:textSize="25sp"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/user_login"
+        android:id="@+id/user_login_auth"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/login"
+        android:importantForAutofill="no"
         android:inputType="text"
         android:textColor="#fdfdfd"
-        android:textColorHint="#BCAAA4"
-        android:importantForAutofill="no" />
+        android:textColorHint="#6D4C41" />
 
     <EditText
-        android:id="@+id/user_email"
-        android:layout_width="220dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        android:textColor="#fdfdfd"
-        android:textColorHint="#BCAAA4"
-        android:importantForAutofill="no" />
-
-    <EditText
-        android:id="@+id/user_pass"
+        android:id="@+id/user_pass_auth"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/password"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:textColor="#fdfdfd"
-        android:textColorHint="#BCAAA4"
-        android:importantForAutofill="no" />
+        android:textColorHint="#6D4C41" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_auth"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="#FFC107"
+        android:backgroundTint="#75072E"
         android:text="@string/log_in"
         android:textSize="16sp"
-        android:textColor="#75072E"
+        android:textColor="#ffffff"
         android:layout_marginTop="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/link_to_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/inter"
+        android:text="Create account"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
         android:textStyle="bold" />
 
 </LinearLayout>

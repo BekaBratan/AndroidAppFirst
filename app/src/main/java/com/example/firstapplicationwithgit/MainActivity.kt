@@ -1,9 +1,11 @@
 package com.example.firstapplicationwithgit
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -12,10 +14,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val userLogin: EditText = findViewById(R.id.user_login)
-        val userEmail: EditText = findViewById(R.id.user_email)
-        val userPass: EditText = findViewById(R.id.user_pass)
-        val button: Button = findViewById(R.id.button)
+        val userLogin: EditText = findViewById(R.id.user_login_reg)
+        val userEmail: EditText = findViewById(R.id.user_email_reg)
+        val userPass: EditText = findViewById(R.id.user_pass_reg)
+        val button: Button = findViewById(R.id.button_reg)
 
         button.setOnClickListener {
             val login = userLogin.text.toString().trim()
@@ -35,6 +37,13 @@ class MainActivity : AppCompatActivity() {
                 userEmail.text.clear()
                 userPass.text.clear()
             }
+        }
+
+        val linkToAuth: TextView = findViewById(R.id.link_to_auth)
+
+        linkToAuth.setOnClickListener{
+            val intent = Intent(this, AuthActivity::class.java)
+            startActivity(intent)
         }
     }
 }
